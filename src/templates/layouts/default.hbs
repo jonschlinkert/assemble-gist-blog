@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{title}} | {{site.title}}</title>
+    <link rel="stylesheet" href="{{assets}}/assemble.css">
+    <link rel="stylesheet" href="{{assets}}/github.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.min.js"></script>
+  </head>
+  <body style="background: white;">
+
+    {{! NAVBAR
+    =================================== }}
+    {{> navbar-fixed-top }}
+
+    {{! MASTHEAD
+    =================================== }}
+    <header class="masthead subhead">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-12">
+            <h1> {{#if section}}{{ uppercase section }} {{else}} {{ uppercase title }}{{/if}} </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="panel-docs">
+
+          {{! SIDE NAVIGATION
+          =================================== }}
+          <div class="col col-lg-3">
+            <div class="sidebar">
+              <span class="nav-section-title">
+                Posts
+              </span>
+              <ul class="nav nav-pills nav-stacked">
+                {{#each pages}}
+                  {{#is data.section "Blog"}}
+                  <li{{#is ../../page.dest this.dest}} class="active"{{/is}}><a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a></li>
+                  {{/is}}
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+
+          {{! MAIN CONTENT
+          =================================== }}
+          <div class="col col-lg-9" style="padding-left: 60px;">
+            <h1>{{page.title}}</h1>
+            {{> body }}
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <script src="{{assets}}/js/highlight.js"></script>
+  </body>
+</html>
