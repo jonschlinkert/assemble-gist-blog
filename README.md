@@ -2,7 +2,14 @@
 
 > Assemble a blog from gists.
 
-It's hard to believe when you see how fast the pages render, but all of the content in the [example pages]() is from Gists.
+It's hard to believe when you see how fast the pages render, but all of the content in the [example pages](http://assemble.github.io/assemble-gist-blog) is from Gists.
+
+## Also see 
+
+### [assemble-boilerplates](https://github.com/assemble/assemble-boilerplates) →
+### [grunt-init-assemble](https://github.com/assemble/grunt-init-assemble-helper) →
+### [grunt-init-assemble-helper](https://github.com/assemble/grunt-init-assemble-helper) →
+
 
 
 ## Contributing

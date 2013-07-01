@@ -17,7 +17,7 @@ component: navbar
           <li{{#is title "Blog"}} class="active"{{/is}}>
             <a href="{{relative page.dest "./posts.html"}}">Blog</a>
           </li>
-          <li> <a href="http://assemble.io">Assemble Docs</a> </li>
+          <li> <a href="http://assemble.io" onclick="_gaq.push(['_trackEvent', 'Navbar', 'clicked', 'Assemble Docs']);">Assemble Docs</a> </li>
         </ul>
       </div>
     </div>
