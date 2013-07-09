@@ -13,7 +13,23 @@ It's hard to believe when you see how fast the pages render, but all of the cont
 
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][].
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](http://gruntjs.com).
 
-## Release History
-_(Nothing yet)_
+
+## Authors
+
+**Jon Schlinkert**
+
++ [http://twitter.com/jonschlinkert](http://twitter.com/jonschlinkert)
++ [http://github.com/jonschlinkert](http://github.com/jonschlinkert)
+
+**Brian Woodward**
+
++ [http://twitter.com/doowb](http://twitter.com/doowb)
++ [http://github.com/doowb](http://github.com/doowb)
+
+
+## Copyright and license
+Copyright 2013 Assemble
+
+[MIT License](LICENSE-MIT)
