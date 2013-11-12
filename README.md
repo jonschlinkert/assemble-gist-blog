@@ -27,7 +27,7 @@ Currently the `assemble.css` stylesheet is used in the examples, but the project
 To do so, from the root of the project `git clone` Bootstrap:
 
 ```bash
-git clone -b 3.0.0-wip https://github.com/twbs/bootstrap.git "vendor/bootstrap"
+git clone -b master https://github.com/twbs/bootstrap.git "vendor/bootstrap"
 ```
 (the "less" task is currently configured to use the `vendor` directory)
 
